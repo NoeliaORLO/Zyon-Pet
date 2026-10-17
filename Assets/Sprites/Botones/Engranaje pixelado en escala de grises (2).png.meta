@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 7e39e45c94a7ccd4297d2f74c30a9bad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6997482997059805438
+    second: Engranaje pixelado en escala de grises (2)_0
+  - first:
+      213: 921916870734735299
+    second: Engranaje pixelado en escala de grises (2)_1
+  - first:
+      213: 493130731173714634
+    second: Engranaje pixelado en escala de grises (2)_2
+  - first:
+      213: 5811966685010354246
+    second: Engranaje pixelado en escala de grises (2)_3
+  - first:
+      213: 8703877153682778212
+    second: Engranaje pixelado en escala de grises (2)_4
+  - first:
+      213: -4553851618141979904
+    second: Engranaje pixelado en escala de grises (2)_5
+  - first:
+      213: 6632646984927333525
+    second: Engranaje pixelado en escala de grises (2)_6
+  - first:
+      213: 7251700816646879911
+    second: Engranaje pixelado en escala de grises (2)_7
+  - first:
+      213: 6670234768025999502
+    second: Engranaje pixelado en escala de grises (2)_8
+  - first:
+      213: 7054614516593504494
+    second: Engranaje pixelado en escala de grises (2)_9
+  - first:
+      213: 6765523037118924834
+    second: Engranaje pixelado en escala de grises (2)_10
+  - first:
+      213: 620178719163494687
+    second: Engranaje pixelado en escala de grises (2)_11
+  - first:
+      213: -5846110852002860388
+    second: Engranaje pixelado en escala de grises (2)_12
+  - first:
+      213: -5125108300655152786
+    second: Engranaje pixelado en escala de grises (2)_13
+  - first:
+      213: -183011130303464072
+    second: Engranaje pixelado en escala de grises (2)_14
+  - first:
+      213: 4366560690678856921
+    second: Engranaje pixelado en escala de grises (2)_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_0
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1106
+        width: 106
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0e59926bd0c1160800000000000000
+      internalID: 6997482997059805438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_1
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1111
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c76598628e4bcc00800000000000000
+      internalID: 921916870734735299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_2
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1106
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca107b89c3f7d600800000000000000
+      internalID: 493130731173714634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_3
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1107
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640627a28e048a050800000000000000
+      internalID: 5811966685010354246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_4
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1100
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46866e9f7226ac870800000000000000
+      internalID: 8703877153682778212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_5
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1112
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b3fc4a4187dc0c0800000000000000
+      internalID: -4553851618141979904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 53
+        width: 1153
+        height: 1007
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cc821aa45eb0c50800000000000000
+      internalID: 6632646984927333525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 763
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aab5a9b87733a460800000000000000
+      internalID: 7251700816646879911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 586
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8856ac5e2f619c50800000000000000
+      internalID: 6670234768025999502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_9
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 578
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0bed0a68607e160800000000000000
+      internalID: 7054614516593504494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 533
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22802336b57f3ed50800000000000000
+      internalID: 6765523037118924834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 441
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f113ffc52415b9800800000000000000
+      internalID: 620178719163494687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_12
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 433
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9230d477217edea0800000000000000
+      internalID: -5846110852002860388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 425
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e613b009725ffd8b0800000000000000
+      internalID: -5125108300655152786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 401
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db15cb850d57df0800000000000000
+      internalID: -183011130303464072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engranaje pixelado en escala de grises (2)_15
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 393
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcf81a20d3299c30800000000000000
+      internalID: 4366560690678856921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Engranaje pixelado en escala de grises (2)_0: 6997482997059805438
+      Engranaje pixelado en escala de grises (2)_1: 921916870734735299
+      Engranaje pixelado en escala de grises (2)_10: 6765523037118924834
+      Engranaje pixelado en escala de grises (2)_11: 620178719163494687
+      Engranaje pixelado en escala de grises (2)_12: -5846110852002860388
+      Engranaje pixelado en escala de grises (2)_13: -5125108300655152786
+      Engranaje pixelado en escala de grises (2)_14: -183011130303464072
+      Engranaje pixelado en escala de grises (2)_15: 4366560690678856921
+      Engranaje pixelado en escala de grises (2)_2: 493130731173714634
+      Engranaje pixelado en escala de grises (2)_3: 5811966685010354246
+      Engranaje pixelado en escala de grises (2)_4: 8703877153682778212
+      Engranaje pixelado en escala de grises (2)_5: -4553851618141979904
+      Engranaje pixelado en escala de grises (2)_6: 6632646984927333525
+      Engranaje pixelado en escala de grises (2)_7: 7251700816646879911
+      Engranaje pixelado en escala de grises (2)_8: 6670234768025999502
+      Engranaje pixelado en escala de grises (2)_9: 7054614516593504494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
