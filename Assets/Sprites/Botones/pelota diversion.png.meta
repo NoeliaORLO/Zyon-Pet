@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e1f40e72d9b231b458092d1d03148a81
+guid: cbf01868a8c9a6149939283eb69405e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 615802354792774785
-    second: Fondo-azul_0
+      213: -7324690942275163130
+    second: pelota diversion_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fondo-azul_0
+      name: pelota diversion_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 941
-        height: 649
+        x: 13
+        y: 12
+        width: 31
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18cb541aaf4cb8800800000000000000
-      internalID: 615802354792774785
+      spriteID: 60cea285568795a90800000000000000
+      internalID: -7324690942275163130
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fondo-azul_0: 615802354792774785
+      pelota diversion_0: -7324690942275163130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

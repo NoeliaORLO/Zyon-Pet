@@ -38,4 +38,10 @@ public class Medidor
         if (actual >= maximo) AlLlegarAlMaximo?.Invoke(this);
         if (actual <= 0) AlLlegarAlMinimo?.Invoke(this);
     }
+
+    // Pone el valor directamente (en vez de sumar o restar)
+    public void Fijar(float valor)
+    {
+        Cambiar(valor - actual);
+    }
 }

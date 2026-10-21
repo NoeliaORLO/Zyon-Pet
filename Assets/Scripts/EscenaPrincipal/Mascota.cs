@@ -28,10 +28,10 @@ public class Mascota : MonoBehaviour // MonoBehaviour -> permite poner el script
     [SerializeField] private Sprite[] spritesEtapa; // creamos una lista de sprites para guardar los dibujos de cada etapa de la mascota
 
     [Header("Barras de la interfaz")]
-    [SerializeField] private BarraExp barraHambre;
-    [SerializeField] private BarraExp barraLimpieza;
-    [SerializeField] private BarraExp barraDiversion;
-    [SerializeField] private BarraExp barraExp;
+    [SerializeField] private BarraStats barraHambre;
+    [SerializeField] private BarraStats barraLimpieza;
+    [SerializeField] private BarraStats barraDiversion;
+    [SerializeField] private BarraStats barraExp;
 
     // Todas las necesidades van de 0 a MAX (1000). Con MAX la necesidad está totalmente cubierta.
 
@@ -52,7 +52,10 @@ public class Mascota : MonoBehaviour // MonoBehaviour -> permite poner el script
 
     private void Start()
     {
+        if (GameManager.Instance != null) CargarEstado(); 
+
         // ponemos las barras de necesidades al máximo
+
         barraHambre.SetMaxExp(MAX);
         barraLimpieza.SetMaxExp(MAX);
         barraDiversion.SetMaxExp(MAX);
@@ -89,7 +92,7 @@ public class Mascota : MonoBehaviour // MonoBehaviour -> permite poner el script
         bool estabaLlena = necesidad >= MAX;
 
         necesidad = Mathf.Min(MAX, necesidad + valor);
-
+        
         if (!estabaLlena)
             GanarExp(expPorAccion);
 
@@ -98,39 +101,40 @@ public class Mascota : MonoBehaviour // MonoBehaviour -> permite poner el script
 
     // ---------- 3. EXPERIENCIA Y EVOLUCIÓN ----------
     private void GanarExp(int cantidad)
-    {
-        if (etapa == Etapa.Evolucion3) return; // ya está en la última etapa
+     {
+         if (etapa == Etapa.Evolucion3) return; // ya está en la última etapa
 
-        exp += cantidad;
+         exp += cantidad;
 
-        if (exp >= UmbralActual())
-        {
-            Evolucionar();
-            return;
-        }
+         if (exp >= UmbralActual())
+         {
+             Evolucionar();
+             return;
+         }
 
-        barraExp.setExp(exp);
-    }
+         barraExp.setExp(exp);
+     }
 
-    private void Evolucionar()
-    {
-        etapa++;
-        ActualizarSprite();
+     private void Evolucionar()
+     {
+         etapa++;
+         ActualizarSprite();
 
-        barraExp.SetMaxExp(UmbralActual());
-        // En la última etapa la barra se queda llena; en las demás, vuelve a empezar
-        exp = (etapa == Etapa.Evolucion3) ? UmbralActual() : 0;
-        barraExp.setExp(exp);
+         barraExp.SetMaxExp(UmbralActual());
+         // En la última etapa la barra se queda llena; en las demás, vuelve a empezar
+         exp = (etapa == Etapa.Evolucion3) ? UmbralActual() : 0;
+         barraExp.setExp(exp);
 
-        Debug.Log("¡La mascota ha evolucionado a " + etapa + "!");
-    }
+         Debug.Log("¡La mascota ha evolucionado a " + etapa + "!");
+     }
 
-    // Experiencia que hace falta para pasar de la etapa actual a la siguiente
-    private int UmbralActual()
-    {
-        if (etapa == Etapa.Evolucion3) return 1;
-        return expParaEvolucionar[(int)etapa];
-    }
+     // Experiencia que hace falta para pasar de la etapa actual a la siguiente
+     private int UmbralActual()
+     {
+         if (etapa == Etapa.Evolucion3) return 1;
+         return expParaEvolucionar[(int)etapa];
+     }
+    
 
     // ---------- 4. REFLEJAR EL ESTADO EN PANTALLA ----------
     private void ActualizarSprite()
@@ -145,4 +149,31 @@ public class Mascota : MonoBehaviour // MonoBehaviour -> permite poner el script
         barraLimpieza.setExp(limpieza);
         barraDiversion.setExp(diversion);
     }
+
+    // ---------- 5. GUARDAR / CARGAR ESTADO ----------
+    private void GuardarEstado()
+    {
+        var d = GameManager.Instance.DatosMascota;
+        d.etapa = etapa;
+        d.hambre = hambre;
+        d.limpieza = limpieza;
+        d.diversion = diversion;
+        d.exp = exp;
+    }
+
+    private void CargarEstado()
+    {
+        var d = GameManager.Instance.DatosMascota;
+        etapa = d.etapa;
+        hambre = d.hambre;
+        limpieza = d.limpieza;
+        diversion = d.diversion;
+        exp = d.exp;
+    }
+
+    private void OnDestroy()
+    {
+        if (GameManager.Instance != null) GuardarEstado();
+    }
 }
+
