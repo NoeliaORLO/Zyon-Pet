@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,28 @@ public class GameManager : MonoBehaviour
 
     public event Action<int> OnMonedasCambiadas;
 
+    // --------------------------------- INVENTARIO ---------------------------------------
+    private readonly Dictionary<string, int> inventario = new Dictionary<string, int>();
+
+    public int Cantidad(string id) { return inventario.TryGetValue(id, out int c) ? c : 0; }
+    public bool Tiene(string id) { return Cantidad(id) > 0; }
+
+    public bool Comprar(ItemTienda item)
+    {
+        // Fondos y decoraciones se compran una sola vez; la comida, las veces que quieras
+        if (item.tipo != TipoItem.Comida && Tiene(item.id)) return false;
+        if (!Gastar(item.precio)) return false;
+
+        inventario[item.id] = Cantidad(item.id) + 1;
+        return true;
+    }
+    public bool Usar(string id)
+    {
+        if (!Tiene(id)) return false;
+        inventario[id]--;
+        return true;
+    }
+    // --------------------------------------------------------------------------------------
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -26,6 +49,8 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         Monedas = monedasIniciales;
+
+        HayPartida = PlayerPrefs.GetInt("hayPartida", 0) == 1;
     }
 
     public void GanarMonedas(int cantidad)
@@ -45,14 +70,21 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    // NUEVO: para "Nueva partida"
+    // Si creamos una Nueva Partida:
     public void ReiniciarPartida()
     {
         DatosMascota = new DatosMascota();
         Monedas = monedasIniciales;
+        inventario.Clear();
         OnMonedasCambiadas?.Invoke(Monedas);
+
+        MarcarPartidaIniciada();
     }
     public bool HayPartida { get; private set; }
 
-    public void MarcarPartidaIniciada() { HayPartida = true; }
+    public void MarcarPartidaIniciada() { 
+        HayPartida = true;
+        PlayerPrefs.SetInt("hayPartida", 1);
+        PlayerPrefs.Save();
+    }
 }

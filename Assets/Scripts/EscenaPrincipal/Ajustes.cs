@@ -7,6 +7,11 @@ public class Ajustes : MonoBehaviour
     [SerializeField] private Slider sliderBrillo;
     [SerializeField] private Image overlayBrillo; // imagen negra a pantalla completa
 
+    [SerializeField] private GameObject panelAjustes;
+
+    public void Abrir() { panelAjustes.SetActive(true); }
+    public void Cerrar() { panelAjustes.SetActive(false); }
+
     private void Start()
     {
         sliderMusica.value = PlayerPrefs.GetFloat("musica", 0.8f);
@@ -26,10 +31,9 @@ public class Ajustes : MonoBehaviour
 
     private void AplicarBrillo(float v)
     {
-        // El brillo real del móvil no se controla bien desde Unity;
-        // se simula con una capa negra semitransparente
+        Debug.Log("Brillo: " + v + " | overlay: " + (overlayBrillo != null));
         if (overlayBrillo != null)
-            overlayBrillo.color = new Color(0, 0, 0, 1f - Mathf.Clamp(v, 0.2f, 1f));
+            overlayBrillo.color = new Color(0, 0, 0, (1f - v) * 0.85f);
         PlayerPrefs.SetFloat("brillo", v);
     }
 }
