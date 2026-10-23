@@ -33,7 +33,9 @@ public class SlotTienda : MonoBehaviour
     {
         if (GameManager.Instance == null) return;
 
-        if (!GameManager.Instance.Comprar(item))
+        if (GameManager.Instance.Comprar(item))
+            GameManager.Instance.Equipar(item);   // fondo y decoración se ponen solos; la comida se ignora
+        else
             Debug.Log("No se puede comprar " + item.nombre);
 
         Refrescar();

@@ -36,7 +36,22 @@ public class GameManager : MonoBehaviour
         inventario[id]--;
         return true;
     }
-    // --------------------------------------------------------------------------------------
+
+    // ------------------------------------ EQUIPADO ------------------------------------------
+    private readonly Dictionary<TipoItem, string> equipado = new Dictionary<TipoItem, string>();
+
+    public string Equipado(TipoItem tipo)
+    {
+        return equipado.TryGetValue(tipo, out string id) ? id : "";
+    }
+
+    public void Equipar(ItemTienda item)
+    {
+        if (item.tipo == TipoItem.Comida) return;   // la comida se consume, no se equipa
+        if (Tiene(item.id)) equipado[item.tipo] = item.id;
+    }
+
+    // -------------------------------- CICLO DE VIDA  --------------------------------------
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -52,6 +67,8 @@ public class GameManager : MonoBehaviour
 
         HayPartida = PlayerPrefs.GetInt("hayPartida", 0) == 1;
     }
+
+    // ---------------------------------- MONEDAS --------------------------------------------
 
     public void GanarMonedas(int cantidad)
     {
@@ -70,12 +87,13 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    // Si creamos una Nueva Partida:
+    // ------------------------------------- PARTIDA ----------------------------------------
     public void ReiniciarPartida()
     {
         DatosMascota = new DatosMascota();
         Monedas = monedasIniciales;
         inventario.Clear();
+        equipado.Clear();
         OnMonedasCambiadas?.Invoke(Monedas);
 
         MarcarPartidaIniciada();
